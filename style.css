@@ -10,7 +10,7 @@
     --white-rgba: rgba(255, 255, 255, 0.12);
 }
 
-/* RESET */
+
 
 * {
     margin: 0;
@@ -31,14 +31,14 @@ body {
     overflow: hidden;
 }
 
-/* CONTAINER */
+
 
 .container {
     position: relative;
     perspective: 1000px;
 }
 
-/* GLOW */
+
 
 .container::before {
     content: "";
@@ -65,7 +65,7 @@ body {
     z-index: -1;
 }
 
-/* CARD */
+
 
 .card {
     width: 350px;
@@ -76,7 +76,7 @@ body {
     transform-style: preserve-3d;
 }
 
-/* BOTH SIDES */
+
 
 .front,
 .back {
@@ -100,7 +100,7 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* FRONT */
+
 
 .front {
     display: flex;
@@ -140,19 +140,7 @@ body {
     font-size: 14px;
 }
 
-/* BACK */
 
-/* .back {
-    transform: rotateY(180deg);
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    place-items: center;
-
-    padding: 45px;
-} */
 
 .back  {
     transform: rotateY(180deg);
@@ -163,7 +151,7 @@ body {
 
     grid-template-rows: repeat(2, 90px);
 
-    /* padding: 45px; */
+    
 
     gap: 35px;
 
@@ -172,7 +160,6 @@ body {
     place-content: center;
 }
 
-/* ICON */
 
 .icon {
     width: 90px;
@@ -195,7 +182,6 @@ body {
     transition: 0.35s ease;
 }
 
-/* HOVER */
 
 .icon:hover {
     transform: translateY(-8px) scale(1.05);
@@ -205,7 +191,6 @@ body {
     color: var(--theme-color-1);
 }
 
-/* FLIP */
 
 .card:hover .front {
     transform: rotateY(-180deg);
@@ -215,7 +200,6 @@ body {
     transform: rotateY(0deg);
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 480px) {
 
@@ -263,12 +247,10 @@ body {
     white-space: nowrap;
 }
 
-/* By default mobile text hidden */
 .mobile-text{
     display: none;
 }
 
-/* Mobile devices */
 @media(max-width: 768px){
 
     .desktop-text{
